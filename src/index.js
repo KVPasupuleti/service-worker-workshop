@@ -4,6 +4,11 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
+export const BACKEND_URL =
+  process.env.NODE_ENV === "production"
+    ? "https://service-worker-workshop.onrender.com" // Replace with your actual backend URL
+    : "http://localhost:5000";
+
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
     navigator.serviceWorker
@@ -23,7 +28,7 @@ if ("serviceWorker" in navigator) {
               .then(function (subscription) {
                 console.log("subscription", subscription);
                 // Send the subscription object to the backend
-                fetch("http://localhost:5000/subscribe", {
+                fetch(`${BACKEND_URL}/subscribe`, {
                   method: "POST",
                   headers: {
                     "Content-Type": "application/json"

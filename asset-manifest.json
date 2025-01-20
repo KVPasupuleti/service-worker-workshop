@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/service-worker-workshop/static/css/main.dd06574c.css",
+    "main.js": "/service-worker-workshop/static/js/main.c98e328d.js",
+    "static/js/453.f819e471.chunk.js": "/service-worker-workshop/static/js/453.f819e471.chunk.js",
+    "index.html": "/service-worker-workshop/index.html",
+    "main.dd06574c.css.map": "/service-worker-workshop/static/css/main.dd06574c.css.map",
+    "main.c98e328d.js.map": "/service-worker-workshop/static/js/main.c98e328d.js.map",
+    "453.f819e471.chunk.js.map": "/service-worker-workshop/static/js/453.f819e471.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dd06574c.css",
+    "static/js/main.c98e328d.js"
+  ]
+}
